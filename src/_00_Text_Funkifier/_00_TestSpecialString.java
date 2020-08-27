@@ -29,7 +29,7 @@ public class _00_TestSpecialString {
 	public void testMixedCapsString() {
 		SpecialString mcs = new MixedCapsString("This is also a test");
 		System.out.println(mcs);
-		assertEquals("tHiS Is aLsO A TeSt", mcs.toString());
+		assertEquals("ThIs iS AlSo a tEsT", mcs.toString());
 	}
 	
 	//4. Create your own class that extends SpecialString.
@@ -38,6 +38,8 @@ public class _00_TestSpecialString {
 	//   the JUnitTest case below to test your customized Special String.
 	@Test
 	public void testCustomString() {
-	
+		SpecialString tcs = new CustomString("This is a third test");
+		System.out.println(tcs);
+		assertEquals("THIS IS A THIRD TEST", tcs.toString());
 	}
 }
